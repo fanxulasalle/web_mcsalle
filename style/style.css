@@ -409,7 +409,8 @@ como es png le podemos poder un fondo a nuestro gusto y */
 .r9{
     grid-area: r9;
 }
-@media (max-width: 750px) {
+
+@media (max-width: 750px) {/*media para pantallas con 750px de ancho como maximo*/
     body{
         width: 100vw;
         height: 100vh;
@@ -531,19 +532,22 @@ como es png le podemos poder un fondo a nuestro gusto y */
     }
     
     @media (max-width: 500px) {
-        body{
+        /*media para pantallas de 500px como maximo (moviles)*/
+        body{ /*indico el ancho y alto del contenido*/
             width: 100vw;
             height: 100vh;
+            display: flex;
         }
-
         header{
             width: 100vw;/*assigno anchura a la barra en responsive*/
 
         }
+        /*empequeñezco las imagenes del menu*/
         .img1{
             width: 100px;
             height: 100px;
         }
+
         .contenedor{
             width: 100vw;
             height: 100%;
